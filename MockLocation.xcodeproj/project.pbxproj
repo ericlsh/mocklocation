@@ -11,6 +11,7 @@
 		D40A2BF62ADDA496000678BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A2BF52ADDA496000678BF /* ContentView.swift */; };
 		D40A2BF82ADDA497000678BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40A2BF72ADDA497000678BF /* Assets.xcassets */; };
 		D40A2BFC2ADDA497000678BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40A2BFB2ADDA497000678BF /* Preview Assets.xcassets */; };
+		D40A2C042ADDB13D000678BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A2C032ADDB13D000678BF /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		D40A2BF72ADDA497000678BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40A2BF92ADDA497000678BF /* MockLocation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MockLocation.entitlements; sourceTree = "<group>"; };
 		D40A2BFB2ADDA497000678BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D40A2C022ADDA621000678BF /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		D40A2C032ADDB13D000678BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,7 @@
 		D40A2BE72ADDA496000678BF = {
 			isa = PBXGroup;
 			children = (
+				D40A2C022ADDA621000678BF /* Location.gpx */,
 				D40A2BF22ADDA496000678BF /* MockLocation */,
 				D40A2BF12ADDA496000678BF /* Products */,
 			);
@@ -57,6 +61,7 @@
 				D40A2BF72ADDA497000678BF /* Assets.xcassets */,
 				D40A2BF92ADDA497000678BF /* MockLocation.entitlements */,
 				D40A2BFA2ADDA497000678BF /* Preview Content */,
+				D40A2C032ADDB13D000678BF /* AppDelegate.swift */,
 			);
 			path = MockLocation;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D40A2C042ADDB13D000678BF /* AppDelegate.swift in Sources */,
 				D40A2BF62ADDA496000678BF /* ContentView.swift in Sources */,
 				D40A2BF42ADDA496000678BF /* MockLocationApp.swift in Sources */,
 			);
@@ -262,11 +268,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MockLocation/MockLocation.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MockLocation/Preview Content\"";
+				DEVELOPMENT_TEAM = S25J74P943;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please let me use your location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -284,6 +293,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mock.MockLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -298,11 +308,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MockLocation/MockLocation.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MockLocation/Preview Content\"";
+				DEVELOPMENT_TEAM = S25J74P943;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please let me use your location";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -320,6 +333,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mock.MockLocation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;

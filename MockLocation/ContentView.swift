@@ -10,10 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "figure.run")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Let run between mk and tst !")
+            Spacer(minLength: 2)
+            Text("After installation, the mock will work automatically. Just delete the app to cancel the mock.")
+                .multilineTextAlignment(.center)
+                
         }
         .padding()
     }
