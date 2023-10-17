@@ -35,7 +35,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 }
             }
         }
-        print("Your code here")
         return true
     }
 }

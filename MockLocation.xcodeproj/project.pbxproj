@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0951CA987617EEF361385E5B /* libPods-MockLocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1B6F49A8260C2B0C7B0F3D /* libPods-MockLocation.a */; };
 		D40A2BF42ADDA496000678BF /* MockLocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A2BF32ADDA496000678BF /* MockLocationApp.swift */; };
 		D40A2BF62ADDA496000678BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A2BF52ADDA496000678BF /* ContentView.swift */; };
 		D40A2BF82ADDA497000678BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40A2BF72ADDA497000678BF /* Assets.xcassets */; };
 		D40A2BFC2ADDA497000678BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40A2BFB2ADDA497000678BF /* Preview Assets.xcassets */; };
 		D40A2C042ADDB13D000678BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40A2C032ADDB13D000678BF /* AppDelegate.swift */; };
+		D4DA9F092ADE54A00018E0AB /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D4DA9F082ADE54A00018E0AB /* Location.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6FAB022E3E6BF1239C1A3D0F /* Pods-MockLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockLocation.debug.xcconfig"; path = "Target Support Files/Pods-MockLocation/Pods-MockLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		740DC8605539353867454A7D /* Pods-MockLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockLocation.release.xcconfig"; path = "Target Support Files/Pods-MockLocation/Pods-MockLocation.release.xcconfig"; sourceTree = "<group>"; };
+		9F1B6F49A8260C2B0C7B0F3D /* libPods-MockLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MockLocation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40A2BF02ADDA496000678BF /* MockLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40A2BF32ADDA496000678BF /* MockLocationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationApp.swift; sourceTree = "<group>"; };
 		D40A2BF52ADDA496000678BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D40A2BF72ADDA497000678BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D40A2BF92ADDA497000678BF /* MockLocation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MockLocation.entitlements; sourceTree = "<group>"; };
 		D40A2BFB2ADDA497000678BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D40A2C022ADDA621000678BF /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		D40A2C032ADDB13D000678BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4DA9F082ADE54A00018E0AB /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,18 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0951CA987617EEF361385E5B /* libPods-MockLocation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		798096D305D42B4E977B114E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB022E3E6BF1239C1A3D0F /* Pods-MockLocation.debug.xcconfig */,
+				740DC8605539353867454A7D /* Pods-MockLocation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D40A2BE72ADDA496000678BF = {
 			isa = PBXGroup;
 			children = (
-				D40A2C022ADDA621000678BF /* Location.gpx */,
 				D40A2BF22ADDA496000678BF /* MockLocation */,
 				D40A2BF12ADDA496000678BF /* Products */,
+				798096D305D42B4E977B114E /* Pods */,
+				E0D62B93E08F4F0AE9A8460D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +72,7 @@
 		D40A2BF22ADDA496000678BF /* MockLocation */ = {
 			isa = PBXGroup;
 			children = (
+				D4DA9F082ADE54A00018E0AB /* Location.gpx */,
 				D40A2BF32ADDA496000678BF /* MockLocationApp.swift */,
 				D40A2BF52ADDA496000678BF /* ContentView.swift */,
 				D40A2BF72ADDA497000678BF /* Assets.xcassets */,
@@ -74,6 +91,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E0D62B93E08F4F0AE9A8460D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F1B6F49A8260C2B0C7B0F3D /* libPods-MockLocation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +106,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D40A2BFF2ADDA497000678BF /* Build configuration list for PBXNativeTarget "MockLocation" */;
 			buildPhases = (
+				09429A14518314147ECEAA14 /* [CP] Check Pods Manifest.lock */,
 				D40A2BEC2ADDA496000678BF /* Sources */,
 				D40A2BED2ADDA496000678BF /* Frameworks */,
 				D40A2BEE2ADDA496000678BF /* Resources */,
@@ -133,11 +159,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40A2BFC2ADDA497000678BF /* Preview Assets.xcassets in Resources */,
+				D4DA9F092ADE54A00018E0AB /* Location.gpx in Resources */,
 				D40A2BF82ADDA497000678BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09429A14518314147ECEAA14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MockLocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D40A2BEC2ADDA496000678BF /* Sources */ = {
@@ -264,6 +316,7 @@
 		};
 		D40A2C002ADDA497000678BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FAB022E3E6BF1239C1A3D0F /* Pods-MockLocation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +357,7 @@
 		};
 		D40A2C012ADDA497000678BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740DC8605539353867454A7D /* Pods-MockLocation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

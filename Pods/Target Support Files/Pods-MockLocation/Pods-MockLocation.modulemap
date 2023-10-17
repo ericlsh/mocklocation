@@ -1,0 +1,6 @@
+module Pods_MockLocation {
+  umbrella header "Pods-MockLocation-umbrella.h"
+
+  export *
+  module * { export * }
+}
